@@ -43,11 +43,52 @@ button {
 }
 
 .linkedin {
-width: 20px;
-height: 20px;
-display: inline-block;
-vertical-align: middle;
-padding-bottom: 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+.parentflex {
+    grid-area: left;
+}
+
+.parentflex {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.parentflex2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.childflex {
+}
+
+.childflex2 {
+    width: 6%;
+    margin-bottom: 50px;
+}
+
+.downloadpdfbutton {
+    margin-left: 272px;
+    height: 50px;
+    width: 250px;
+    padding-left: 25px;
+}
+
+.alfredicon {
+    height: 50px;
+}
+
+.downloadicon {
+    height: 20px;
+    width: 20px;
+    padding-left: 30px;
 }
 
 .leftcontent {
@@ -61,15 +102,15 @@ padding-bottom: 20px;
 .rightcontent {
     display: inline-block;
     width: 70%;
-    height: 600px;
     padding: 25px;
     background-color: black;
     color: white;
     outline: 1px solid red;
 }
 
-.column1 {
-    flex: 40%;
+.alfredmobile {
+    height: 437px;
+    width: 226px;
     padding: 5px;
   }
   
@@ -82,13 +123,30 @@ padding-bottom: 20px;
     display: flex;
 }
 
+.casestudyintro {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageplaceholder {
+    padding: 5px;
+}
+
+
+
+.gridcontainer {
+    display: grid left right;
+    grid-template-areas: 'left right right';
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
 
 .leftcontent {
-    margin: 0 auto;
+    grid-area: left;
 }
 
 .rightcontent {
-    margin: 0 auto;
+    grid-area: right;
 }
 
 footer {
@@ -99,4 +157,8 @@ footer {
 
 .footertext {
     color: white;
+}
+
+.column2 {
+    padding-left: 25px;
 }
